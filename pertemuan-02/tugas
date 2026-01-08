@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>ini Header</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">beranda</a></li>
+            <li><a href="#about">tentang</a></li>
+            <li><a href="#contact">kontak</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+        <h2>selamat datang</h2>
+        <p>ini contoh paragraf HTML.</p>
+    </section>
+    <section id="about">
+        <h2>tentang saya</h2>
+        <p><strong>NIM:</strong> 2511530021</p>
+        <P><strong>Nama:</strong> Delva &#128526;</P>
+        <p><strong>Tempat Lahir:</strong> Manggar</p>
+        <p><strong>Tanggal Lahir:</strong> 26 Desember 2025</p>
+        <p><strong>Hobi:</strong> Bermain Bola</p>
+        <p><strong>Pekerjaan:</strong> kasir di Belibong</p>
+        <p><strong>Nama Orang Tua:</strong> Ayah Norman dan Ibu Nuryana</p>
+        <p><strong>Nama Abang:</strong> Agusetiawan</p>
+        <p><strong>Nama Adik:</strong> Yansah</p>
+        <p>HTML digunakan untuk membuat struktur halaman web.</p>
+    </section>
+    <section id="contact">
+        <h2>kontak kami</h2>
+        <p>contoh form</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Delva [2511530021]</p>
+  </footer>  
+</body>
+</html>
