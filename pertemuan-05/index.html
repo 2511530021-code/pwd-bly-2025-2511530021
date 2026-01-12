@@ -2,113 +2,114 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>judul halaman</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>judul halaman</title>
+  <style>
+    #about {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 700px;
+      margin: 20px auto;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #about h2 {
+      color: #003366;
+      border-bottom;
+      2px solid #003366;
+      padding-bottom: 6px;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    #about p {
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+      margin: 0;
+      padding: 6px 0;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    #about strong {
+      min-width: 180px;
+      color: #003366;
+      font-weight: 600;
+      text-align: right;
+      padding-right: 16px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
       #about {
-        background-color: #ffffff;
-        border-radius: 10px; 
-        padding: 20px;
-        max-width: 700px;
-        margin: 20px auto;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: flex-start;
       }
 
-      #about h2 {
-        color: #003366;
-        border-bottom; 2px solid #003366;
-        padding-bottom: 6px;
-        margin-top: 0;
-        margin-bottom: 16px;
+      #about storng {
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 2px;
       }
-
-      #about p {
-        display: flex;
-        justify-content: flex-start;
-        align-items: baseline;
-        margin: 0;
-        padding: 6px 0;
-        border-bottom: 1px solid #e6e6e6;
-      }
-
-      #about strong {
-        min-width: 180px;
-        color: #003366;
-        font-weight: 600;
-        text-align: right;
-        padding-right: 16px;
-        flex-shrink: 0;
-      }
-
-      @media (max-width: 600px) {
-        #about {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        #about storng {
-          text-align: left;
-          padding-right: 0;
-          margin-bottom: 2px;
-        }
-      }
-    </style>
+      
+  </style>
 </head>
 
 <body>
   <header>
     <h1>ini Header</h1>
-    <button class="menu-toggle" arial-label="toggle navigation">
+    <button class="menu-toggle" aria-label="toggle navigation">
       &#9776;
     </button>
     <nav>
-        <ul>
-            <li><a href="#home">beranda</a></li>
-            <li><a href="#about">tentang</a></li>
-            <li><a href="#contact">kontak</a></li>
-        </ul>
+      <ul>
+        <li><a href="#home">beranda</a></li>
+        <li><a href="#about">tentang</a></li>
+        <li><a href="#contact">kontak</a></li>
+      </ul>
     </nav>
   </header>
   <main>
     <section id="home">
-        <h2>selamat datang</h2>
-        <p>ini contoh paragraf HTML.</p>
+      <h2>selamat datang</h2>
+      <p>ini contoh paragraf HTML.</p>
     </section>
     <section id="about">
-        <h2>tentang saya</h2>
-        <p><strong>NIM:</strong> 2511530021</p>
-        <P><strong>Nama:</strong> Delva &#128526;</P>
-        <p><strong>Tempat Lahir:</strong> Manggar</p>
-        <p><strong>Tanggal Lahir:</strong> 26 Desember 2025</p>
-        <p><strong>Hobi:</strong> Bermain Bola</p>
-        <p><strong>Pekerjaan:</strong> kasir di Belibong</p>
-        <p><strong>Nama Orang Tua:</strong> Ayah Norman dan Ibu Nuryana</p>
-        <p><strong>Nama Abang:</strong> Agusetiawan</p>
-        <p><strong>Nama Adik:</strong> Yansah</p>
-        <p>HTML digunakan untuk membuat struktur halaman web.</p>
+      <h2>tentang saya</h2>
+      <p><strong>NIM:</strong> 2511530021</p>
+      <P><strong>Nama:</strong> Delva &#128526;</P>
+      <p><strong>Tempat Lahir:</strong> Manggar</p>
+      <p><strong>Tanggal Lahir:</strong> 26 Desember 2025</p>
+      <p><strong>Hobi:</strong> Bermain Bola</p>
+      <p><strong>Pekerjaan:</strong> kasir di Belibong</p>
+      <p><strong>Nama Orang Tua:</strong> Ayah Norman dan Ibu Nuryana</p>
+      <p><strong>Nama Abang:</strong> Agusetiawan</p>
+      <p><strong>Nama Adik:</strong> Yansah</p>
+      <p>HTML digunakan untuk membuat struktur halaman web.</p>
     </section>
     <section id="contact">
-        <h2>kontak kami</h2>
-        <form action="" method="GET">
-          <label for="textNama">Nama:</label>
-          <input type="text" id="textNama" name="txtNama" placeholder="Delva" required autocomplete="name">
+      <h2>kontak kami</h2>
+      <form action="" method="GET">
+        <label for="textNama">Nama:</label>
+        <input type="text" id="textNama" name="txtNama" placeholder="Delva" required autocomplete="name">
 
-          <label for="txtEmail">Email:</label>
-          <input type="email" id="txtEmail" name="txtEmail" Placeholder="2511530021@mahasiswa.atmalhur.ac.id" required aucomplete="email">
-          
-          <label for="txtPesan">Pesan:</label>
-          <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+        <label for="txtEmail">Email:</label>
+        <input type="email" id="txtEmail" name="txtEmail" Placeholder="2511530021@mahasiswa.atmalhur.ac.id" required
+          aucomplete="email">
 
-          <button type="submit">Kirim</button>
-          <button type="reset">Batal</button>
-        </form>
+        <label for="txtPesan">Pesan:</label>
+        <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
     </section>
   </main>
   <footer>
     <p>&copy; 2026 Delva [2511530021]</p>
-  </footer>  
-
-  <script src="script.js"></script>
+  </footer>
 </body>
+
 </html>
