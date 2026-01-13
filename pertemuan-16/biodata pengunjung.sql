@@ -14,6 +14,37 @@ create table biodata pengunjung (
 </head>
 <body>
     <h2>form biodata pengunjung</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Pesan</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+    <tbody id="data-biodata-pengunjung">
+        <!--  data akan di masukan di sini,bisa dari backend atau statis -->
+        <tr data-id="101" data-nama="Ahmad" data-email="ahmad@example.com">
+            <td>101</td>
+            <td>Ahmad</td>
+            <td>ahmad@example.com</td>
+            <td>Pesan pengunjung</td>
+            <td><button onclick="editvistor (this)">Hapus</button></td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Siti</td>
+            <td>siti@example.com</td>
+            <td>Pesan pengunjung</td>
+            <td><button onclick="editvistor (this)">Hapus</button></td>
+        </tr>  
+    </tbody>
+</table>
+
+<hr>
+
 
     <!-- menampilkan pesan feedback jika ada (setelah PRG) -->
     <?PHP IF (isset($_GET['pesan'])): ?>
@@ -136,6 +167,10 @@ if ($result ->num_rows > 0) {
 </body>
 </html>
 
+< form action="proses_hapus_biodata_pengunjung.php" method="post">
+    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+    <button type="submit" name="hapus_biodata_pengunjung">Hapus</button>
+</form>
 <?php
 $conn->close();
 ?>
