@@ -8,6 +8,7 @@ Belajar:
   <li>emmet untuk struktur html5</li>
   <li>membuat emmet untuk header+main+footer</li>
   <li>coba kode html tidak lengkap</li>
+  <li>membuat emmet-1</li>
   <li>membuat title dokumen</li>
   <li>membuat header dokumen</li>
   <li>membuat main dokumen</li>

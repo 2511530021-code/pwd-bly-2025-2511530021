@@ -6,6 +6,7 @@ Nama: Delva<br><br>
 hari ini saya belajar :
 <ol>
     <li>mengcopy index.html pertemuan-3 ke index.html pertemuan-4</li>
+    <li>membuat sebelum styling section contact</li>
     <li>membuat struktur HTML dan CSS</li>
     <li>membuat aturan css untuk body dan global riset</li>
     <li>membuat styling header</li>

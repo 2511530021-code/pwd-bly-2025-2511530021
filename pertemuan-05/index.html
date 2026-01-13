@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>judul halaman</title>
+  <title>contoh javascript dasar</title>
+</head>
+
+<body>
+<script>
+  alert("Hallo Dunia");
+</script>
+</body>
+
+</html>
   <style>
     #about {
       background-color: #ffffff;
@@ -60,7 +69,7 @@
 <body>
   <header>
     <h1>ini Header</h1>
-    <button class="menu-toggle" aria-label="toggle navigation">
+    <button class="menu-Toggle" aria-label="toggle navigation">
       &#9776;
     </button>
     <nav>
@@ -76,7 +85,7 @@
       <h2>selamat datang</h2>
       <p>ini contoh paragraf HTML.</p>
     </section>
-    <section id="about">
+     <section id="about">
       <h2>tentang saya</h2>
       <p><strong>NIM:</strong> 2511530021</p>
       <P><strong>Nama:</strong> Delva &#128526;</P>
@@ -90,26 +99,29 @@
       <p>HTML digunakan untuk membuat struktur halaman web.</p>
     </section>
     <section id="contact">
-      <h2>kontak kami</h2>
-      <form action="" method="GET">
-        <label for="textNama">Nama:</label>
-        <input type="text" id="textNama" name="txtNama" placeholder="Delva" required autocomplete="name">
+        <h2>kontak kami</h2>
+        <form action="" method="GET">
+          <label for="textNama">Nama:</label>
+          <input type="text" id="textNama" name="txtNama" placeholder="Delva" required autocomplete="name">
 
-        <label for="txtEmail">Email:</label>
-        <input type="email" id="txtEmail" name="txtEmail" Placeholder="2511530021@mahasiswa.atmalhur.ac.id" required
-          aucomplete="email">
+          <label for="txtEmail">Email:</label>
+          <input type="email" id="txtEmail" name="txtEmail" Placeholder="2511530021@mahasiswa.atmalhur.ac.id" required aucomplete="email">
+          
+          <label for="txtPesan"><span>Pesan Anda:</Span>
+          <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+          <small id="charcount">0/200 karakter</small>
+          </label>
 
-        <label for="txtPesan">Pesan:</label>
-        <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
-
-        <button type="submit">Kirim</button>
-        <button type="reset">Batal</button>
+          <button type="submit">Kirim</button>
+          <button type="reset">Batal</button>
       </form>
     </section>
   </main>
   <footer>
     <p>&copy; 2026 Delva [2511530021]</p>
   </footer>
-</body>
 
+  <script src="script.js"></script>
+</body>
 </html>
+</head>
