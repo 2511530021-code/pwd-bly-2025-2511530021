@@ -167,9 +167,9 @@ if ($result ->num_rows > 0) {
 </body>
 </html>
 
-< form action="proses_hapus_biodata_pengunjung.php" method="post">
-    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-    <button type="submit" name="hapus_biodata_pengunjung">Hapus</button>
+< form action="biodata_pengunjung.php" method="post">
+    <!-- input  field lainnya -->
+    <button type="submit" name="biodata_pengunjung">kirim data</button>
 </form>
 <?php
 $conn->close();
