@@ -171,6 +171,28 @@ if ($result ->num_rows > 0) {
     <!-- input  field lainnya -->
     <button type="submit" name="biodata_pengunjung">kirim data</button>
 </form>
+</body>
+
+if ($update_berhasil) {
+   $_SESSION["pesan"] = "sukses: record berhasil di perbarui.";
+   $_session["type"] ="success";
+} else {
+   $_SESSION["pesan"] = "gagal: terjadi kesalahan saat memperbarui record.";
+   $_SESSION["type"] ="error";
+}
+header("Location: biodata_pengunjung.php"); // redirect ke halaman utama
+exit();
+
+header("Location: biodata_pengunjung.php?STATUS=success&ID=" . $RECORD_ID);
+// ATAU
+header("Location: biodata_pengunjung.php?STATUS=error&ID=" . $RECORD_ID);
+
+IF (isset($_GET["STATUS"]) && $_GET["STATUS"] == "success") {
+       echo "<div class="alert alert-success">Data berhasil di perbarui. (ID: " . htmlspecialchars($_GET["ID"]) . ")</p>";
+   } ELSE IF ($_GET["STATUS"] == "error") {
+       echo "<p style='color:red;'>Terjadi kesalahan saat memperbarui data. (ID: " . htmlspecialchars($_GET["ID"]) . ")</p>";
+   }
+}
 <?php
 $conn->close();
 ?>
