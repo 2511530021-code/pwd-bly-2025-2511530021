@@ -23,4 +23,17 @@ create table biodata pengunjung (
             <p style="color:red;">< Data Terjadi Kesalahan, silahkan coba lagi.</p>
         <?php endif; ?>
 
+        <form action="proses biodata pengunjung.php" method="post">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
 
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit" name="submit_form">kirim data</button>
+        </form>
+    </body>
+</html>
