@@ -108,4 +108,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_form'])) {
     header("Location: biodata_pengunjung.php");
     exit();
 }
+
+</php>
+if ($result ->num_rows > 0) {
+   // output data setiap baris
+   while($row = $result->fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>" . $row["id"] . "</td>";
+        echo "<td>" . $row["nama"] . "</td>";
+        echo "<td>" . $row["email"] . "</td>";
+        echo "<td>" . $row["pesan"] . "</td>";
+        // tautan edit dan hapus
+        echo "</tr>";
+        //link edit mengarah ke halaman edit_biodata_pengunjung.php dengan parameter id
+        echo "<a  href='edit_biodata_pengunjung.php?id=" . $row["id"] . "'>Edit</a> | ";
+        //link hapus mengarah ke halaman hapus_biodata_pengunjung.php dengan parameter id
+        echo "<a  href='hapus_biodata_pengunjung.php?id=" . $row["id"] . "' onclick=\"return confirm('Apakah Anda yakin ingin menghapus data ini?');\">Hapus</a>";
+        echo "</td>";
+        echo "</tr>";
+   }
+} else {
+   echo "<tr><td colspan='5'>Tidak ada data</td></tr>";
+}
+?>
+</table>
+
+</body>
+</html>
+
+<?php
+$conn->close();
 ?>
